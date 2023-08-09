@@ -56,6 +56,7 @@ SELECT concat(first_name, last_name, left(email,3)) AS name_campaign
 FROM sakila.customer
 ORDER BY last_name ASC;
 
+
 -- Challenge 2.
 -- 1.1 The total number of films that have been released.
 SELECT COUNT(DISTINCT film_id) AS num_films
