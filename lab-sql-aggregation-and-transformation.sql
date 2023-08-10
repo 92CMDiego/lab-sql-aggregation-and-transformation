@@ -2,6 +2,9 @@ USE sakila;
 
 SHOW TABLES;
 
+-- CORRECTED TYPO. In Challenge 2 - 1.3 exercise I had put "ORDER BY num_films_rating" instead of "ORDER BY rating_num_films".
+-- Now is corrected.
+
 -- Challenge 1.
 
 -- 1.1 Determine the shortest and longest movie durations and name the values as max_duration and min_duration.
@@ -72,7 +75,7 @@ GROUP BY rating;
 SELECT rating, COUNT(DISTINCT film_id) AS rating_num_films
 FROM sakila.film
 GROUP BY rating
-ORDER BY num_films_rating DESC;
+ORDER BY rating_num_films DESC;
 
 -- 2. We need to track the performance of our employees. Using the rental table, determine the number of rentals processed by each employee.
 -- This will help us identify our top-performing employees and areas where additional training may be necessary.
